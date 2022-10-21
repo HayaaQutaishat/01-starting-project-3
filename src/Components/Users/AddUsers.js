@@ -22,7 +22,13 @@ const AddUsers = (props) => {
     if (+enteredAge < 1) {
       return;
     }
-    console.log(enteredName, enteredAge);
+    // console.log(enteredName, enteredAge);
+    const newUser = {
+      id: Math.random().toString(),
+      name: enteredName,
+      age: +enteredAge,
+    };
+    props.onAddUserList(newUser);
     setEnteredAge("");
     setEnteredName("");
   };
