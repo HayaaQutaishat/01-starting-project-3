@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./AddUser.module.css";
 import Card from "../UI/Card";
 import Button from "../UI/Button";
+import ErrorModal from "../UI/ErrorModal";
 const AddUsers = (props) => {
   const [enteredName, setEnteredName] = useState("");
   const [enteredAge, setEnteredAge] = useState("");
