@@ -3,7 +3,7 @@ import Card from "./Card";
 import Button from "./Button";
 const ErrorModal = (props) => {
   return (
-    <div>
+    <div onClick={props.onConfirm}>
       <div className={styles.backdrop} />
       <Card className={styles.modal}>
         <header className={styles.header}>
@@ -13,7 +13,7 @@ const ErrorModal = (props) => {
           <p>{props.message}</p>
         </div>
         <footer className={styles.actions}>
-          <Button>Okay</Button>
+          <Button onClick={props.onConfirm}>Okay</Button>
         </footer>
       </Card>
     </div>
