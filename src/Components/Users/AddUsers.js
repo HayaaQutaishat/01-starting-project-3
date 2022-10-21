@@ -16,6 +16,12 @@ const AddUsers = (props) => {
 
   const formSubmitHandler = (event) => {
     event.preventDefault();
+    if (enteredName.trim().length === 0 || enteredAge.trim().length === 0) {
+      return;
+    }
+    if (+enteredAge < 1) {
+      return;
+    }
     console.log(enteredName, enteredAge);
     setEnteredAge("");
     setEnteredName("");
@@ -35,7 +41,6 @@ const AddUsers = (props) => {
           id="age"
           value={enteredAge}
           type="number"
-          min="1"
           onChange={ageChangeHandler}
         />
         <Button type="submit">Add User</Button>
