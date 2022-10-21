@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./AddUser.css";
+import styles from "./AddUser.module.css";
 import Card from "../UI/Card";
 const AddUsers = (props) => {
   const [enteredName, setEnteredName] = useState("");
@@ -17,7 +17,7 @@ const AddUsers = (props) => {
     event.preventDefault();
   };
   return (
-    <Card>
+    <Card className={styles.input}>
       <form onSubmit={formSubmitHandler}>
         <label htmlFor="username">Username</label>
         <input id="username" type="text" onChange={userNameChangeHandler} />
