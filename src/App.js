@@ -11,7 +11,7 @@ function App() {
       return [newUser, ...prevList];
     });
   };
-  console.log(list);
+  // console.log(list);
   return (
     <Fragment>
       <AddUsers onAddUserList={addUserListHandler} />
