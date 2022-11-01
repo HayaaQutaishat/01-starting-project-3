@@ -13,4 +13,5 @@ and all those Components for various reasons need wrapping divs or have wrapping
  - React Fragments.
 
 
+I also worked with React Portals to provide the ability for an element to render outside the default hierarchy without compromising the parent-child relationship between components.
 
