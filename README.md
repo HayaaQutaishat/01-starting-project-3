@@ -7,7 +7,7 @@ I used multiple approaches to solve this problem. such as simply wrapping the ad
 and all those Components for various reasons need wrapping divs or have wrapping Components. That's why I worked with other alternatives.  
 
 
-### The alternatives are:
+###### The alternatives are:
 
  -Creating a Wrapper Component.
  -React Fragments.
