@@ -9,8 +9,8 @@ and all those Components for various reasons need wrapping divs or have wrapping
 
 ### The alternatives are:
 
--Creating a Wrapper Component.
--React Fragments.
+ -Creating a Wrapper Component.
+ -React Fragments.
 
 
 
